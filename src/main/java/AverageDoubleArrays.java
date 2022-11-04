@@ -3,17 +3,22 @@ public class AverageDoubleArrays {
 
 // Complete these methods
 
-    public int count(double[] aa) {
-        return 0;
+    public double count(double[] aa) { //SHOULD THESE BE DOUBLES OR INTS??????????????????????
+        double count = aa.length;       //I changed these from ints to doubles
+        return count;                   //does dividing a double by an int result in a double? yes
     }
 
-    public int sum(double[] aa) {
+    public double sum(double[] aa) {
+        double sum = 0;
 
-        return 0;
+        for (int i = 0; i < aa.length; i++) {
+            sum += aa[i];
+        }
+        return sum;
     }
 
-    public int average(double[] aa) {
-        return 0;
+    public double average(double[] aa) {
+        return sum(aa) / count(aa);
     }
 
 }

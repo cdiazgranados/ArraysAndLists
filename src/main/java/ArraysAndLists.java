@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class ArraysAndLists {
 
     public static void main(String[] args) {
-        ArraysAndLists mainObj = new ArraysAndLists();
+        ArraysAndLists mainObj = new ArraysAndLists(); //Why is it creating an object of itself?
 
         mainObj.doArrayAnalysis();
         mainObj.doArrayListAnalysis();
@@ -17,7 +17,7 @@ public class ArraysAndLists {
         int[] aa = { 2,3,4,5,6};
         int[] bb = { 10, 4, 6, 2, 13, 18, 5};
 
-        AverageIntArrays avga = new AverageIntArrays();
+        AverageIntArrays avga = new AverageIntArrays(); //accesses the AverageIntArrays Class
 
         int countaa = avga.count(aa);
         int countbb = avga.count(bb);
@@ -25,21 +25,21 @@ public class ArraysAndLists {
         int sumaa = avga.sum(aa);
         int sumbb = avga.sum(bb);
 
-        int averageaa = avga.average(aa);
+        int averageaa = avga.average(aa); //solution will be rounded down
         int averagebb = avga.average(bb);
 
-        System.out.println("AA Count "+countaa+" Sum "+ sumaa+" Avg "+averageaa);
-        System.out.println("BB Count "+countbb+" Sum "+ sumbb+" Avg "+averagebb);
+        System.out.println("AA Count "+countaa+" Sum "+ sumaa+" Avg "+averageaa); //prints what we see in the console.
+        System.out.println("BB Count "+countbb+" Sum "+ sumbb+" Avg "+averagebb);   //first two lines
     }
 
     private void doArrayListAnalysis() {
 
-        ArrayList<Integer> aa = new ArrayList<Integer>(Arrays.asList(2,3,4,5,6));
+        ArrayList<Integer> aa = new ArrayList<Integer>(Arrays.asList(2,3,4,5,6)); //gets the list view of these two arrays
         ArrayList<Integer> bb = new ArrayList<Integer>(Arrays.asList(10, 4, 6, 2, 13, 18, 5));
 
-        AverageIntegerLists avga = new AverageIntegerLists();
+        AverageIntegerLists avga = new AverageIntegerLists(); //access the AverageIntegerLists Class
 
-        int countaa = avga.count(aa);
+        int countaa = avga.count(aa); //All these methods need to be changed in the AverageIntegerLists Class
         int countbb = avga.count(bb);
 
         int sumaa = avga.sum(aa);
@@ -55,7 +55,7 @@ public class ArraysAndLists {
     private void doArrayLoading() {
         // example of how loadIntArrayFromFile can be used.
         LoadAndStore loader = new LoadAndStore();
-        int[] cc = loader.loadIntArrayFromFile("./testIntegerData1.txt");
+        int[] cc = loader.loadIntArrayFromFile("./testIntegerData1.txt"); //info on testIntegerData1 is unclear
 
         AverageIntArrays avga = new AverageIntArrays();
 
