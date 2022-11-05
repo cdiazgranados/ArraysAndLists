@@ -56,16 +56,22 @@ public class ArraysAndLists {
         // example of how loadIntArrayFromFile can be used.
         LoadAndStore loader = new LoadAndStore();
         int[] cc = loader.loadIntArrayFromFile("./testIntegerData1.txt"); //info on testIntegerData1 is unclear
+        //new souts
+        double[] dd = loader.loadDoubleArrayFromFile("./testDoubleData2.txt"); //test
 
         AverageIntArrays avga = new AverageIntArrays();
+        AverageDoubleArrays avda = new AverageDoubleArrays(); //test
 
         int countcc = avga.count(cc);
+        double countdd = avda.count(dd); //test
 
         int sumcc = avga.sum(cc);
+        double sumdd = avda.sum(dd); //test
 
         int averagecc = avga.average(cc);
+        double averagedd = avda.average(dd); //test
 
         System.out.println("CC Count "+countcc+" Sum "+ sumcc+" Avg "+averagecc);
-
+        System.out.println("DD Count "+countdd+" Sum "+ sumdd+" Avg "+averagedd); //test
     }
 }

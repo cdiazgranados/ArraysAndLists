@@ -16,7 +16,13 @@ public class AverageIntArrays {
     }
 
     public int average(int[] aa) {
-        return sum(aa) / count(aa);
+        try {
+            return sum(aa) / count(aa);
+        } catch(ArithmeticException e) { //using the ArithmeticException class and calling e
+            System.out.println("error");
+            return 0;
+        }
+
     }
 
 }

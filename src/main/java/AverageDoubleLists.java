@@ -14,10 +14,10 @@ public class AverageDoubleLists {
             sum += aa.get(i);
         }
 
-        return sum;
+        return Math.round(sum * 10.0) / 10.0;
     }
     public Double average(ArrayList<Double> aa) {
-        return sum(aa) / count(aa);
+        return Math.round((sum(aa) / count(aa)) * 10.0) /10.0;
     }
 
 }

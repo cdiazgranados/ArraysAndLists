@@ -18,6 +18,11 @@ public class AverageIntegerLists {
     }
 
     public int average(ArrayList<Integer> aa) {
-        return sum(aa) / count(aa);
+        try {
+            return sum(aa) / count(aa);
+        } catch(ArithmeticException e) { //using the ArithmeticException class and calling e. BECAUSE COUNT EQUALS 0!!!!!!!!!!!!!
+            System.out.println("error");
+            return 0;
+        }
     }
 }
